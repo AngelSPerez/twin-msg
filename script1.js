@@ -6,7 +6,8 @@ const isLocal = window.location.hostname === 'localhost' ||
                 window.location.hostname === '127.0.0.1';
 
 // 🔥 Ruta absoluta que funciona en Bytehost
-const API_URL = 'https://twin-messenger2.byethost13.com/api';
+const API_URL = 'https://twin-messenger2.byethost13.com/api/proxy.php?endpoint=';
+
 
 // 🔧 Ajustar polling según entorno
 const POLLING_INTERVAL = isLocal ? 2000 : 5000;
@@ -852,3 +853,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
